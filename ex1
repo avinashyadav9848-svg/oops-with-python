@@ -1,15 +1,17 @@
-# Parent Class
-class Animal:
-    def __init__(self, name):
-        self.name = name
+class student:
+    Name = "Avinash"
+    Age = "20"
 
-    def speak(self):
-        return f"{self.name} makes a sound."
+    def read(self):
+        age = 19
+        print(age)
+        print("reading")
 
-# Child Class inheriting from Animal
-class Dog(Animal):
-    def speak(self):
-        return f"{self.name} barks!"
+    def write(self):
+        print("writing")
 
-dog = Dog("Buddy")
-print(dog.speak())  # Output: Buddy barks!
+s1 = student()
+print(s1.Name)
+print(s1.Age)
+s1.read()
+s1.write()
