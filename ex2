@@ -1,30 +1,14 @@
-class BankAccount:
-    def __init__(self, owner, balance=0.0):
-        self.owner = owner
-        self.balance = balance
-
-    # Method 1: Deposit funds
-    def deposit(self, amount):
-        if amount > 0:
-            self.balance += amount
-            return f"Deposited ${amount:.2f}. New balance: ${self.balance:.2f}"
-        return "Deposit amount must be positive."
-
-    # Method 2: Withdraw funds
-    def withdraw(self, amount):
-        if 0 < amount <= self.balance:
-            self.balance -= amount
-            return f"Withdrew ${amount:.2f}. Remaining balance: ${self.balance:.2f}"
-        return "Insufficient funds or invalid amount."
-
-    # Method 3: Get current account status
-    def get_account_info(self):
-        return f"Account Owner: {self.owner} | Balance: ${self.balance:.2f}"
-
-
-# --- Example Usage ---
-account = BankAccount("Alex", 100.0)
-
-print(account.get_account_info())  # Output: Account Owner: Alex | Balance: $100.00
-print(account.deposit(50.0))       # Output: Deposited $50.00. New balance: $150.00
-print(account.withdraw(30.0))      # Output: Withdrew $30.00. Remaining balance: $120.00
+class math ():
+    def add (self,a,b):
+        print(a+b)
+    def sub (self,a,b):
+        print(a-b)
+    def mul (self,a,b):
+        print(a*b)
+    def div(self,a,b):
+        print (a/b)
+m1= math()
+m1.add(1,2)
+m1.sub(2,1)
+m1.mul(1,1)
+m1.div(10,10)
