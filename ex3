@@ -1,22 +1,12 @@
-class Student:
-    def __init__(self, name, age, grade):
+class Sample:
+    def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.grade = grade
 
-    def get_details(self):
-        return f"Student: {self.name} | Age: {self.age} | Grade: {self.grade}"
-
-
-# --- Creating Multiple Objects ---
-
-student1 = Student("Alice", 20, "A")
-student2 = Student("Bob", 22, "B")
-student3 = Student("Charlie", 21, "A+")
-
-# Storing multiple objects in a list
-students = [student1, student2, student3]
-
-# Calling methods on each object
-for student in students:
-    print(student.get_details())
+    def read(self):
+        print(self.name)
+        print(self.age)
+s1 = Sample("kprit", 20)
+s1.read()
+s2 = Sample("Avinash", 18)
+s2.read()
